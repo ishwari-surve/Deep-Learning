@@ -11,7 +11,7 @@ All 6 weights and 3 biases start random. Input = (2, 3), expected output = 8.
 ## Note
 The hidden layer update is a simplified teaching version. Real backpropagation is in folder 07.
 
-## Files
+## Files 
 | File | What it does |
 |---|---|
 | 01_multi_neuron_training.py | Training loop with 5 graphs (loss, prediction, hidden outputs, weights) |
