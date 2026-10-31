@@ -3,7 +3,7 @@
 # ------------------------------------------------------------
 # 1. Reading data from CSV
 # 2. Data analysis
-# 3. Preprocessing
+# 3. Preprocessing 
 # 4. Train-test split
 # 5. Feature scaling
 # 6. FNN model training
