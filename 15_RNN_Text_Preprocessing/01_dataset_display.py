@@ -1,5 +1,6 @@
 # ============================================================
 # Program 1 : Dataset and Labels
+# Author    : Ishwari Vijaykumar Surve
 # Target:
 # Understand training data and output labels used for RNN
 # ============================================================
@@ -13,8 +14,8 @@ sentences = [
 labels = [1, 0, 0]
 
 print("=" * 60)
-print("        Marvellous Infosystems")
-print("   RNN Applications - Program 1")
+print("   Deep Learning : RNN Text Preprocessing")
+print("   Program 1 : Dataset and Labels")
 print("=" * 60)
 
 print("Target of this Program:")
