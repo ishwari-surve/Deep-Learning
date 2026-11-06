@@ -1,7 +1,5 @@
 # 16 RNN Embedding and Hidden State
 
-Taught on: 25 April
-
 ## About
 After text is changed into number sequences, two ideas are needed before the RNN:
 1. Embedding: each word number becomes a vector of numbers.
