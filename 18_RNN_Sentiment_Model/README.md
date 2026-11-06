@@ -12,7 +12,7 @@ The model reads a sentence and says Positive or Negative.
 | food was good | 1 (Positive) |
 | food was bad | 0 (Negative) |
 | food was not good | 0 (Negative) |
-
+ 
 ## Model architecture
 | Layer | Settings | Job |
 |---|---|---|
