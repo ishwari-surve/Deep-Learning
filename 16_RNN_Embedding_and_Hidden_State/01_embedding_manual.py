@@ -1,5 +1,5 @@
 # ============================================================
-# Program 10 : Manual Embedding Concept
+# Program  : Manual Embedding Concept
 # Author    : Ishwari Vijaykumar Surve
 # Target:
 # Understand how tokens can be represented as numeric vectors
