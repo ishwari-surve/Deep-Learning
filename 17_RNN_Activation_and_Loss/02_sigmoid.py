@@ -1,7 +1,7 @@
 # ============================================================
-# Program 16 : Sigmoid Function
+# Program  : Sigmoid Function
 # Author    : Ishwari Vijaykumar Surve
-# Target:
+# Target: 
 # Understand sigmoid function used for binary output
 # ============================================================
 
