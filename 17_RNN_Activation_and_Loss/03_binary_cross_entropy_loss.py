@@ -1,5 +1,5 @@
 # ============================================================
-# Program 17 : Binary Crossentropy Loss
+# Program  : Binary Crossentropy Loss
 # Author    : Ishwari Vijaykumar Surve
 # Target:
 # Understand loss calculation for binary classification
