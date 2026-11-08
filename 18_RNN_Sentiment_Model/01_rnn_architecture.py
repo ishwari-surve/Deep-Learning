@@ -1,5 +1,5 @@
 # ============================================================
-# Program 18 : Build RNN Architecture
+# Program  : Build RNN Architecture
 # Author    : Ishwari Vijaykumar Surve
 # Target:
 # Create Embedding + SimpleRNN + Dense model architecture
