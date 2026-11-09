@@ -32,7 +32,7 @@ def relu(z):
 # ---------------------------------------------------------
 # Generic neuron → works with any activation function
 
-def Marvellous_neuron_forward(inputs, weights, bias, activation_func):
+def neuron_forward(inputs, weights, bias, activation_func):
 
     print("\n----- NEURON CALCULATION START -----\n")
 
@@ -57,7 +57,7 @@ def Marvellous_neuron_forward(inputs, weights, bias, activation_func):
 
     print("\nStep 2 : Activation Function Applied")
     print("Activation Function :", activation_func.__name__)
-    print("Output (ŷ) :", y_hat)
+    print("Output (ŷ) :", y_hat)
 
     print("\n----- NEURON CALCULATION END -----\n")
 
@@ -104,7 +104,10 @@ def plot_sigmoid_relu():
 
 def main():
 
-    print("\n========= ACTIVATION FUNCTION COMPARISON =========\n")
+    print("=" * 60)
+    print("   Deep Learning : Activation Functions")
+    print("   Program 4 : Sigmoid vs ReLU Neuron Comparison")
+    print("=" * 60)
 
     # Example data
     inputs = [1.0, 2.0, 3.0]
@@ -113,11 +116,11 @@ def main():
 
     # Sigmoid neuron
     print("=== Sigmoid Neuron ===")
-    Marvellous_neuron_forward(inputs, weights, bias, sigmoid)
+    neuron_forward(inputs, weights, bias, sigmoid)
 
     # ReLU neuron
     print("=== ReLU Neuron ===")
-    Marvellous_neuron_forward(inputs, weights, bias, relu)
+    neuron_forward(inputs, weights, bias, relu)
 
     # Plot comparison
     plot_sigmoid_relu()
