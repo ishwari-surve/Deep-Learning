@@ -25,7 +25,7 @@ def relu(z):
 # 2. Summation + Bias
 # 3. Activation (ReLU)
 
-def Marvellous_neuron_forward(inputs, weights, bias):
+def neuron_forward(inputs, weights, bias):
 
     print("\n----- NEURON CALCULATION START -----\n")
 
@@ -52,7 +52,7 @@ def Marvellous_neuron_forward(inputs, weights, bias):
 
     print("\nStep 2 : Activation Function Applied")
     print("Activation Function : ReLU")
-    print("Output (ŷ) =", y_hat)
+    print("Output (ŷ) =", y_hat)
 
     print("\n----- NEURON CALCULATION END -----\n")
 
@@ -97,7 +97,10 @@ def plot_relu():
 
 def main():
 
-    print("\n========= MARVELLOUS NEURON DEMO =========\n")
+    print("=" * 60)
+    print("   Deep Learning : Activation Functions")
+    print("   Program 2 : Artificial Neuron with ReLU Activation")
+    print("=" * 60)
 
     # Example Inputs (features)
     inputs = [1.0, 2.0, 3.0]
@@ -109,7 +112,7 @@ def main():
     bias = 0.5
 
     # Perform forward propagation
-    z, y_hat = Marvellous_neuron_forward(inputs, weights, bias)
+    z, y_hat = neuron_forward(inputs, weights, bias)
 
     # Plot ReLU graph
     plot_relu()
