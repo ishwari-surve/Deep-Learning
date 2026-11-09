@@ -28,7 +28,7 @@ def sigmoid(z):
 # 2. Add bias
 # 3. Apply sigmoid activation
 
-def Marvellous_neuron_forward(inputs, weights, bias):
+def neuron_forward(inputs, weights, bias):
 
     print("\n----- NEURON CALCULATION START -----\n")
 
@@ -55,7 +55,7 @@ def Marvellous_neuron_forward(inputs, weights, bias):
 
     print("\nStep 2 : Activation Function")
     print("Activation Function : Sigmoid")
-    print("Output (ŷ) =", y_hat)
+    print("Output (ŷ) =", y_hat)
 
     print("\n----- NEURON CALCULATION END -----\n")
 
@@ -100,7 +100,10 @@ def plot_sigmoid():
 
 def main():
 
-    print("\n========= MARVELLOUS SIGMOID NEURON =========\n")
+    print("=" * 60)
+    print("   Deep Learning : Activation Functions")
+    print("   Program 3 : Artificial Neuron with Sigmoid Activation")
+    print("=" * 60)
 
     # Example inputs
     inputs = [1.0, 2.0, 3.0]
@@ -112,7 +115,7 @@ def main():
     bias = 0.5
 
     # Forward pass
-    z, y_hat = Marvellous_neuron_forward(inputs, weights, bias)
+    z, y_hat = neuron_forward(inputs, weights, bias)
 
     print("Final z     :", z)
     print("Final y_hat :", y_hat)
