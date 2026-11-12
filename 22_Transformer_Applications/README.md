@@ -1,5 +1,5 @@
 # 22 Transformer Applications
-
+ 
 ## About
 Three small Transformer models built with TensorFlow and Keras.
 Each one uses a different type of Transformer:
