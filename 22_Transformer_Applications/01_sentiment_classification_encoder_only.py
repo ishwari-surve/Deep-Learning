@@ -1,18 +1,32 @@
+# ============================================================
+# Program  : Transformer Sentiment Classification (Encoder Only)
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Build an encoder only Transformer in Keras to classify
+# sentences as Positive or Negative
+# ============================================================
+
 import tensorflow as tf
 from tensorflow.keras import layers
 import numpy as np
 
-def Marvellous_Header(step, title):
+def Print_Header(step, title):
     print("\n" + "=" * 70)
     print(f"Step {step}: {title}")
     print("=" * 70)
+
+
+print("=" * 70)
+print("   Deep Learning : Transformer Applications")
+print("   Program 76 : Transformer Sentiment Classification (Encoder Only)")
+print("=" * 70)
 
 
 # ------------------------------------------------------------
 # Step 1: Dataset
 # ------------------------------------------------------------
 
-Marvellous_Header(1, "Dataset Creation")
+Print_Header(1, "Dataset Creation")
 print("Explanation: Creating positive and negative training sentences.")
 
 sentences = [
@@ -56,7 +70,7 @@ for s, l in zip(sentences, labels):
 # Step 2: Tokenization and Padding
 # ------------------------------------------------------------
 
-Marvellous_Header(2, "Tokenization and Padding")
+Print_Header(2, "Tokenization and Padding")
 print("Explanation: Each word is converted into a number. Padding makes every sentence length equal.")
 
 sequence_length = 8
@@ -86,7 +100,7 @@ for sentence, tokens in zip(sentences[:5], x_data.numpy()[:5]):
 # Step 3: Embedding and Positional Encoding
 # ------------------------------------------------------------
 
-Marvellous_Header(3, "Embedding and Positional Encoding")
+Print_Header(3, "Embedding and Positional Encoding")
 print("Token numbers are converted into vectors. Position information is added because Transformer does not read words sequentially like RNN.")
 
 embed_dim = 16
@@ -120,7 +134,7 @@ print(position_embedding_output[0].numpy())
 # Step 4: Self-Attention
 # ------------------------------------------------------------
 
-Marvellous_Header(4, "Self-Attention")
+Print_Header(4, "Self-Attention")
 print("Each word compares itself with every other word in the same sentence.")
 
 sample_combined_embedding = token_embedding_output + position_embedding_output
@@ -207,7 +221,7 @@ class TransformerEncoder(layers.Layer):
 # Step 7: Model Building
 # ------------------------------------------------------------
 
-Marvellous_Header(5, "Model Building")
+Print_Header(5, "Model Building")
 print("Combining Embedding, Positional Encoding, Transformer Encoder and Classification Layer.")
 
 num_heads = 2
@@ -250,7 +264,7 @@ model.summary()
 # Step 8: Model Training
 # ------------------------------------------------------------
 
-Marvellous_Header(6, "Model Training")
+Print_Header(6, "Model Training")
 print("Model learns positive and negative sentence patterns from training data.")
 
 history = model.fit(
@@ -266,7 +280,7 @@ history = model.fit(
 # Step 9: Training Evaluation
 # ------------------------------------------------------------
 
-Marvellous_Header(7, "Training Evaluation")
+Print_Header(7, "Training Evaluation")
 print("Explanation: Checking how much model learned from the training data.")
 
 loss, accuracy = model.evaluate(x_data, labels, verbose=0)
@@ -279,7 +293,7 @@ print("Training Accuracy :", accuracy)
 # Step 10: Prediction
 # ------------------------------------------------------------
 
-Marvellous_Header(8, "Prediction")
+Print_Header(8, "Prediction")
 print("Model predicts whether new sentences are positive or negative.")
 
 test_sentences = [
