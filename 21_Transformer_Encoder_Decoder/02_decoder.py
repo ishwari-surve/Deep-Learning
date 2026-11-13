@@ -1,10 +1,17 @@
+# ============================================================
+# Program  : Transformer Decoder
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Understand one Transformer decoder block step by step using NumPy
+# ============================================================
+
 import numpy as np
 
 np.set_printoptions(precision=3, suppress=True)
 
 print("=" * 70)
-print("        Marvellous Infosystems")
-print("        Simple Transformer Decoder Demonstration")
+print("   Deep Learning : Transformer Encoder and Decoder")
+print("   Program 75 : Simple Transformer Decoder Demonstration")
 print("=" * 70)
 
 # ------------------------------------------------------------
