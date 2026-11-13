@@ -1,10 +1,17 @@
+# ============================================================
+# Program  : Positional Encoding
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Understand positional encoding step by step using NumPy
+# ============================================================
+
 import numpy as np
 
 np.set_printoptions(precision=4, suppress=True)
 
 print("=" * 70)
-print("        Marvellous Infosystems")
-print("        Detailed Positional Encoding Demonstration")
+print("   Deep Learning : Transformer Basics")
+print("   Program 73 : Detailed Positional Encoding Demonstration")
 print("=" * 70)
 
 # ------------------------------------------------------------
@@ -95,4 +102,3 @@ for word, emb, pe, final in zip(words, embedding, PE, final_input):
     print(f"Embedding           : {emb}")
     print(f"Positional Encoding : {pe}")
     print(f"Final Input         : {final}")
-
