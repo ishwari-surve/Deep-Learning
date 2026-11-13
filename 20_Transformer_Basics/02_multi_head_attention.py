@@ -1,10 +1,17 @@
+# ============================================================
+# Program  : Multi Head Attention
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Understand multi head attention step by step using NumPy
+# ============================================================
+
 import numpy as np
 
 np.set_printoptions(precision=3, suppress=True)
 
 print("=" * 70)
-print("        Marvellous Infosystems")
-print("        Detailed Multi Head Attention Demonstration")
+print("   Deep Learning : Transformer Basics")
+print("   Program 72 : Detailed Multi Head Attention Demonstration")
 print("=" * 70)
 
 # ------------------------------------------------------------
@@ -289,4 +296,3 @@ print("\nFinal Meaning:")
 print("Head 1 gives one contextual view of the sentence.")
 print("Head 2 gives another contextual view of the sentence.")
 print("After concatenation, each word contains richer information from multiple heads.")
-
