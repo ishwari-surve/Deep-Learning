@@ -1,10 +1,17 @@
+# ============================================================
+# Program  : Transformer Encoder
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Understand one Transformer encoder block step by step using NumPy
+# ============================================================
+
 import numpy as np
 
 np.set_printoptions(precision=3, suppress=True)
 
 print("=" * 70)
-print("        Marvellous Infosystems")
-print("        Simple Transformer Encoder Demonstration")
+print("   Deep Learning : Transformer Encoder and Decoder")
+print("   Program 74 : Simple Transformer Encoder Demonstration")
 print("=" * 70)
 
 # ------------------------------------------------------------
@@ -158,42 +165,4 @@ def feed_forward(X):
 
     relu_output = np.maximum(0, hidden)
 
-    print("\nAfter ReLU")
-    print(relu_output)
-
-    output = np.dot(relu_output, W2)
-
-    print("\nDense Layer 2 Output")
-    print(output)
-
-    return output
-
-ff_output = feed_forward(norm1)
-
-# ------------------------------------------------------------
-# Step 6: Add & Layer Normalization Again
-# ------------------------------------------------------------
-
-print("\nSTEP 6: Add & Layer Normalization Again")
-print("-" * 70)
-
-add2 = norm1 + ff_output
-
-print("\nAdd Operation 2 = Norm1 + Feed Forward Output")
-print(add2)
-
-encoder_output = layer_norm(add2)
-
-print("\nFinal Transformer Encoder Output")
-print(encoder_output)
-
-# ------------------------------------------------------------
-# Final Word-wise Output
-# ------------------------------------------------------------
-
-print("\n" + "=" * 70)
-print("FINAL WORD-WISE ENCODER OUTPUT")
-print("=" * 70)
-
-for word, vector in zip(words, encoder_output):
-    print(f"{word:5s} -> {vector}")
+    print("\nAfter
