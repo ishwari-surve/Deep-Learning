@@ -1,3 +1,12 @@
+# ============================================================
+# Program 77 : Transformer Neural Machine Translation
+#              (Encoder and Decoder)
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Build an encoder-decoder Transformer in Keras to translate
+# English sentences into Marathi
+# ============================================================
+
 import tensorflow as tf
 from tensorflow.keras import layers
 import numpy as np
@@ -6,17 +15,23 @@ import numpy as np
 # Utility Header
 # ------------------------------------------------------------
 
-def Marvellous_Header(step, title):
+def Print_Header(step, title):
     print("\n" + "=" * 75)
     print(f"Step {step}: {title}")
     print("=" * 75)
+
+
+print("=" * 75)
+print("   Deep Learning : Transformer Applications")
+print("   Program 77 : Transformer Neural Machine Translation (Encoder-Decoder)")
+print("=" * 75)
 
 
 # ============================================================
 # Step 1: Dataset Creation
 # ============================================================
 
-Marvellous_Header(1, "Dataset Creation")
+Print_Header(1, "Dataset Creation")
 
 print("Creating small English to Marathi translation dataset.")
 
@@ -57,7 +72,7 @@ for eng, mar in zip(english_sentences, target_sentences):
 # Step 2: Text Vectorization
 # ============================================================
 
-Marvellous_Header(2, "Tokenization and Padding")
+Print_Header(2, "Tokenization and Padding")
 
 print("Explanation: Converting English and Marathi words into token numbers.")
 
@@ -109,7 +124,7 @@ print(decoder_target_data[0].numpy())
 # Step 3: Positional Embedding Layer
 # ============================================================
 
-Marvellous_Header(3, "Token Embedding and Positional Embedding")
+Print_Header(3, "Token Embedding and Positional Embedding")
 
 print("Transformer needs word meaning plus word position.")
 
@@ -142,7 +157,7 @@ class TokenAndPositionEmbedding(layers.Layer):
 # Step 4: Transformer Encoder Block
 # ============================================================
 
-Marvellous_Header(4, "Transformer Encoder Block")
+Print_Header(4, "Transformer Encoder Block")
 
 print("""
 Encoder reads the complete English sentence.
@@ -194,7 +209,7 @@ class TransformerEncoder(layers.Layer):
 # Step 5: Transformer Decoder Block
 # ============================================================
 
-Marvellous_Header(5, "Transformer Decoder Block")
+Print_Header(5, "Transformer Decoder Block")
 
 print("""
 Decoder generates Marathi output.
@@ -289,7 +304,7 @@ class TransformerDecoder(layers.Layer):
 # Step 6: Model Building
 # ============================================================
 
-Marvellous_Header(6, "Complete Transformer Model Building")
+Print_Header(6, "Complete Transformer Model Building")
 
 print("Connecting Encoder and Decoder together.")
 
@@ -344,7 +359,7 @@ model.summary()
 # Step 7: Training
 # ============================================================
 
-Marvellous_Header(7, "Model Training")
+Print_Header(7, "Model Training")
 
 print("""
 Encoder input  : English sentence
@@ -367,7 +382,7 @@ model.fit(
 # Step 8: Reverse Vocabulary for Prediction
 # ============================================================
 
-Marvellous_Header(8, "Reverse Vocabulary Creation")
+Print_Header(8, "Reverse Vocabulary Creation")
 
 print("Creating index-to-word dictionary for Marathi output.")
 
@@ -382,7 +397,7 @@ for i in range(15):
 # Step 9: Sentence Translation Function
 # ============================================================
 
-Marvellous_Header(9, "Translation Function")
+Print_Header(9, "Translation Function")
 
 print("""
 During prediction, decoder generates one word at a time.
@@ -424,7 +439,7 @@ def translate_sentence(input_sentence):
 # Step 10: Final Testing
 # ============================================================
 
-Marvellous_Header(10, "Final Translation Testing")
+Print_Header(10, "Final Translation Testing")
 
 test_sentences = [
     "i love ai",
