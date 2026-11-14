@@ -1,9 +1,19 @@
+# ============================================================
+# Program 9 : Single Neuron Training with Graphs
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Understand how a neuron learns and see the loss, prediction
+# and weight change in 3 graphs (20 training steps)
+# ============================================================
+
 import random
 import matplotlib.pyplot as plt
 
-print("\n===================================================")
-print("        LEARNING WITH VISUALIZATION")
-print("===================================================\n")
+print("=" * 60)
+print("   Deep Learning : Single Neuron Training")
+print("   Program 9 : Single Neuron Training with Graphs")
+print("=" * 60)
+print()
 
 
 # ---------------------------------------------------------
