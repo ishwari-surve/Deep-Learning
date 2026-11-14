@@ -1,3 +1,11 @@
+# ============================================================
+# Program 78 : Generative Pre-trained Transformer (Decoder Only)
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Build a decoder only mini GPT in Keras for next word
+# prediction and text generation
+# ============================================================
+
 import tensorflow as tf
 from tensorflow.keras import layers
 import numpy as np
@@ -6,17 +14,23 @@ import numpy as np
 # Utility Header
 # ------------------------------------------------------------
 
-def Marvellous_Header(step, title):
+def Print_Header(step, title):
     print("\n" + "=" * 75)
     print(f"Step {step}: {title}")
     print("=" * 75)
+
+
+print("=" * 75)
+print("   Deep Learning : Transformer Applications")
+print("   Program 78 : Generative Pre-trained Transformer (Decoder Only)")
+print("=" * 75)
 
 
 # ============================================================
 # Step 1: Dataset Creation
 # ============================================================
 
-Marvellous_Header(1, "Dataset Creation")
+Print_Header(1, "Dataset Creation")
 
 print("Creating simple text data for next-word prediction.")
 
@@ -51,7 +65,7 @@ for sentence in sentences:
 # Step 2: Text Vectorization
 # ============================================================
 
-Marvellous_Header(2, "Tokenization and Padding")
+Print_Header(2, "Tokenization and Padding")
 
 print("Converting words into token numbers.")
 
@@ -84,7 +98,7 @@ for sentence, tokens in zip(sentences[:5], tokenized_data.numpy()[:5]):
 # Step 3: Prepare Input and Target
 # ============================================================
 
-Marvellous_Header(3, "Input and Target Preparation")
+Print_Header(3, "Input and Target Preparation")
 
 print("""
 For Decoder-only Transformer, model learns next-word prediction.
@@ -118,7 +132,7 @@ Target sequence : love artificial intelligence
 # Step 4: Token and Positional Embedding
 # ============================================================
 
-Marvellous_Header(4, "Token Embedding and Positional Embedding")
+Print_Header(4, "Token Embedding and Positional Embedding")
 
 print("""
 Token Embedding gives meaning to words.
@@ -175,7 +189,7 @@ print(sample_embedding_output[0][0].numpy())
 # Step 5: Decoder-Only Transformer Block
 # ============================================================
 
-Marvellous_Header(5, "Decoder-Only Transformer Block")
+Print_Header(5, "Decoder-Only Transformer Block")
 
 print("""
 This block uses Masked Self-Attention.
@@ -248,7 +262,7 @@ class DecoderOnlyTransformerBlock(layers.Layer):
 # Step 6: Demonstrate Mask Matrix
 # ============================================================
 
-Marvellous_Header(6, "Causal Mask Demonstration")
+Print_Header(6, "Causal Mask Demonstration")
 
 print("This mask prevents model from seeing future words.")
 
@@ -281,7 +295,7 @@ Word at position 2 can see position 0, 1 and 2.
 # Step 7: Model Building
 # ============================================================
 
-Marvellous_Header(7, "Model Building")
+Print_Header(7, "Model Building")
 
 print("""
 Building Mini GPT using:
@@ -330,7 +344,7 @@ model.summary()
 # Step 8: Model Training
 # ============================================================
 
-Marvellous_Header(8, "Model Training")
+Print_Header(8, "Model Training")
 
 print("""
 Model learns to predict next word at every position.
@@ -351,7 +365,7 @@ history = model.fit(
 # Step 9: Reverse Vocabulary
 # ============================================================
 
-Marvellous_Header(9, "Reverse Vocabulary Creation")
+Print_Header(9, "Reverse Vocabulary Creation")
 
 print("Creating index-to-word dictionary for prediction.")
 
@@ -366,7 +380,7 @@ for i in range(min(25, len(vocabulary))):
 # Step 10: Next Word Prediction Function
 # ============================================================
 
-Marvellous_Header(10, "Next Word Prediction Function")
+Print_Header(10, "Next Word Prediction Function")
 
 print("""
 Given a partial sentence, model predicts the next word.
@@ -414,7 +428,7 @@ for text in test_inputs:
 # Step 11: Text Generation Function
 # ============================================================
 
-Marvellous_Header(11, "Autoregressive Text Generation")
+Print_Header(11, "Autoregressive Text Generation")
 
 print("""
 The model predicts one word.
