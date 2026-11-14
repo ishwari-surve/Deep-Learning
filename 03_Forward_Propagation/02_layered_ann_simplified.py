@@ -1,8 +1,18 @@
+# ============================================================
+# Program 6 : Layered ANN Forward Propagation (Simplified)
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Understand forward propagation of a 2-2-1 network
+# step by step, without functions or loops
+# ============================================================
+
 import math
 
-print("\n===================================================")
-print("        MARVELLOUS FORWARD PROPAGATION DEMO")
-print("===================================================\n")
+print("=" * 60)
+print("   Deep Learning : Forward Propagation")
+print("   Program 6 : Layered ANN Forward Propagation (Simplified)")
+print("=" * 60)
+print()
 
 
 # ---------------------------------------------------------
@@ -157,7 +167,7 @@ print("FINAL RESULT")
 print("===================================================\n")
 
 print(f"Hidden Layer Outputs : h1 = {h1}, h2 = {h2}")
-print(f"Final Output (ŷ)     : {output}")
+print(f"Final Output (ŷ)     : {output}")
 print(f"Confidence (%)       : {output * 100:.2f}%")
 
 print("\nDecision Rule:")
