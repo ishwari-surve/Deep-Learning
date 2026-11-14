@@ -248,13 +248,18 @@ def ann_forward_pass(inputs):
 # Description   : Entry point of program
 # ---------------------------------------------------------
 def main():
+    print("=" * 60)
+    print("   Deep Learning : Forward Propagation")
+    print("   Program 5 : Layered ANN Forward Propagation (Functions)")
+    print("=" * 60)
+    print()
+
     # Example input values
     # Change these values to test different outputs
     inputs = [2.0, 3.0]
 
     # Start ANN forward pass
     ann_forward_pass(inputs)
-
 
 if __name__ == "__main__":
     main()
