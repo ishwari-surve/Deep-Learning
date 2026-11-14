@@ -1,9 +1,18 @@
+# ============================================================
+# Program 8 : Single Neuron Training Steps
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Understand how a neuron learns: predict, find error and loss,
+# then update the weight (10 training steps)
+# ============================================================
+
 import random
 
-print("\n===================================================")
-print("        LEARNING PROCESS DEMO")
-print("===================================================\n")
-
+print("=" * 60)
+print("   Deep Learning : Single Neuron Training")
+print("   Program 8 : Single Neuron Training Steps")
+print("=" * 60)
+print()
 
 # ---------------------------------------------------------
 # STEP 1 : INITIAL DATA
