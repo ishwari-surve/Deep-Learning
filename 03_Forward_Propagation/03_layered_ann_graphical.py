@@ -1,10 +1,20 @@
+# ============================================================
+# Program 7 : Layered ANN Forward Propagation (Graphical)
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Understand forward propagation of a 2-2-1 network and
+# see the values in 4 graphs
+# ============================================================
+
 import math
 import matplotlib.pyplot as plt
 import numpy as np
 
-print("\n===================================================")
-print("      ANN FORWARD PROPAGATION DEMO")
-print("===================================================\n")
+print("=" * 60)
+print("   Deep Learning : Forward Propagation")
+print("   Program 7 : Layered ANN Forward Propagation (Graphical)")
+print("=" * 60)
+print()
 
 
 # ---------------------------------------------------------
