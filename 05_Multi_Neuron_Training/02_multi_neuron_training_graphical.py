@@ -1,13 +1,20 @@
-# ---------------------------------------------------------
-# Network : 2 Inputs -> 2 Hidden Neurons -> 1 Output
-# ---------------------------------------------------------
+# ============================================================
+# Program 11 : Multi Neuron ANN Training with Network Diagram
+# Author    : Ishwari Vijaykumar Surve
+# Network   : 2 Inputs -> 2 Hidden Neurons -> 1 Output
+# Target:
+# Train the network for 50 steps, show 5 graphs and then draw
+# the final network with all trained weights and biases
+# ============================================================
 
 import random
 import matplotlib.pyplot as plt
 
-print("\n==========================================================")
-print("      MULTI-NEURON ANN TRAINING DEMO")
-print("==========================================================\n")
+print("=" * 60)
+print("   Deep Learning : Multi Neuron Training")
+print("   Program  : Multi Neuron ANN Training with Network Diagram")
+print("=" * 60)
+print()
 
 # ---------------------------------------------------------
 # STEP 1 : INPUT DATA
