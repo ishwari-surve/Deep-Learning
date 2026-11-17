@@ -1,6 +1,6 @@
 # MSE Loss Demonstration
 
-def Marvellous_MSE(y_true, y_pred):
+def MSE(y_true, y_pred):
     n = len(y_true)
     total_error = 0
 
@@ -16,5 +16,5 @@ def Marvellous_MSE(y_true, y_pred):
 y_true = [10, 20, 30]
 y_pred = [12, 18, 33]
 
-loss = Marvellous_MSE(y_true, y_pred)
+loss = MSE(y_true, y_pred)
 print("MSE Loss:", loss)
