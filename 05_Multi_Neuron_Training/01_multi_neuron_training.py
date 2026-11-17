@@ -1,9 +1,19 @@
+# ============================================================
+# Program 10 : Multi Neuron ANN Training
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Train a 2-2-1 network (2 inputs, 2 hidden neurons, 1 output)
+# for 50 steps and show the learning in 5 graphs
+# ============================================================
+
 import random
 import matplotlib.pyplot as plt
 
-print("\n==========================================================")
-print("       MULTI-NEURON ANN TRAINING DEMO")
-print("==========================================================\n")
+print("=" * 60)
+print("   Deep Learning : Multi Neuron Training")
+print("   Program 10 : Multi Neuron ANN Training")
+print("=" * 60)
+print()
 
 # ---------------------------------------------------------
 # STEP 1 : INPUT DATA
