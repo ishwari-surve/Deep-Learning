@@ -1,21 +1,29 @@
-import math
-
-# ---------------------------------------------------------
-# Marvellous ANN Example
-# Demonstrates:
+# ============================================================
+# Program  : Gradient and Backpropagation
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Train a single neuron with sigmoid activation. Demonstrates:
 # 1. Forward propagation
 # 2. Loss calculation
 # 3. Backpropagation
 # 4. Gradient descent weight update
-# ---------------------------------------------------------
+# ============================================================
+
+import math
+
+print("=" * 60)
+print("   Deep Learning : Backpropagation")
+print("   Program 16 : Gradient and Backpropagation")
+print("=" * 60)
+print()
 
 # Sigmoid activation function
-def Marvellous_Sigmoid(value):
+def sigmoid(value):
     return 1 / (1 + math.exp(-value))
 
 # Derivative of sigmoid
 # If output = sigmoid(z), then derivative = output * (1 - output)
-def Marvellous_Sigmoid_Derivative(output):
+def sigmoid_derivative(output):
     return output * (1 - output)
 
 # ---------------------------------------------------------
@@ -59,7 +67,7 @@ for epoch in range(1, epochs + 1):
     z = (x1 * w1) + (x2 * w2) + b
 
     # Output after sigmoid activation
-    output = Marvellous_Sigmoid(z)
+    output = sigmoid(z)
 
     # =========================
     # Step 2: Loss Calculation
@@ -79,7 +87,7 @@ for epoch in range(1, epochs + 1):
 
     # Derivative of output with respect to z
     # doutput/dz = sigmoid'(z) = output * (1 - output)
-    doutput_dz = Marvellous_Sigmoid_Derivative(output)
+    doutput_dz = sigmoid_derivative(output)
 
     # Chain rule:
     # dL/dz = dL/doutput * doutput/dz
