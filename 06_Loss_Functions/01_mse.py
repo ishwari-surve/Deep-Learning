@@ -1,4 +1,17 @@
-# MSE Loss Demonstration
+# ============================================================
+# Program  : MSE (Mean Squared Error) Loss
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Calculate the Mean Squared Error between actual and
+# predicted values
+# Formula   : MSE = sum of (y_true - y_pred)^2 / n
+# ============================================================
+
+print("=" * 60)
+print("   Deep Learning : Loss Functions")
+print("   Program 13 : MSE Loss Demonstration")
+print("=" * 60)
+
 
 def MSE(y_true, y_pred):
     n = len(y_true)
