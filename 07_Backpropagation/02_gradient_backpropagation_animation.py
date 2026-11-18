@@ -1,23 +1,32 @@
-import math
-import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
-
-# ---------------------------------------------------------
-# Marvellous ANN Example with Animated Graphics
-# Demonstrates:
+# ============================================================
+# Program 17 : Gradient and Backpropagation with Animation
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Train a single neuron with sigmoid activation and show the
+# training as an animation. Demonstrates:
 # 1. Forward propagation
 # 2. Loss calculation
 # 3. Backpropagation
 # 4. Gradient descent weight update
 # 5. Animated visual representation
-# ---------------------------------------------------------
+# ============================================================
+
+import math
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+
+print("=" * 60)
+print("   Deep Learning : Backpropagation")
+print("   Program 17 : Gradient and Backpropagation with Animation")
+print("=" * 60)
+print()
 
 # Sigmoid activation function
-def Marvellous_Sigmoid(value):
+def sigmoid(value):
     return 1 / (1 + math.exp(-value))
 
 # Derivative of sigmoid
-def Marvellous_Sigmoid_Derivative(output):
+def sigmoid_derivative(output):
     return output * (1 - output)
 
 # ---------------------------------------------------------
@@ -58,14 +67,14 @@ for epoch in range(1, epochs + 1):
 
     # Step 1: Forward Propagation
     z = (x1 * w1) + (x2 * w2) + b
-    output = Marvellous_Sigmoid(z)
+    output = sigmoid(z)
 
     # Step 2: Loss Calculation
     loss = 0.5 * (target - output) ** 2
 
     # Step 3: Backpropagation
     dL_doutput = output - target
-    doutput_dz = Marvellous_Sigmoid_Derivative(output)
+    doutput_dz = sigmoid_derivative(output)
     dL_dz = dL_doutput * doutput_dz
 
     dL_dw1 = dL_dz * x1
@@ -139,7 +148,7 @@ def update(frame):
     data = history[frame]
 
     # Title
-    ax.text(5.5, 9.5, "Marvellous ANN Training Animation", ha='center',
+    ax.text(5.5, 9.5, "ANN Training Animation", ha='center',
             fontsize=18, weight='bold')
 
     # Draw nodes
