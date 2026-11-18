@@ -1,7 +1,20 @@
-# MAE Loss Demonstration
+# ============================================================
+# Program  : MAE (Mean Absolute Error) Loss
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Calculate the Mean Absolute Error between actual and
+# predicted values
+# Formula   : MAE = sum of abs(y_true - y_pred) / n
+# ============================================================
+
+print("=" * 60)
+print("   Deep Learning : Loss Functions")
+print("   Program 14 : MAE Loss Demonstration")
+print("=" * 60)
+
 
 def MAE(y_true, y_pred):
-    n = len(y_true) 
+    n = len(y_true)
     total_error = 0
 
     for i in range(n):
