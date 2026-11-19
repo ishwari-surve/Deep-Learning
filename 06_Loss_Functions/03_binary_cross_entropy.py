@@ -1,5 +1,5 @@
 # ============================================================
-# Program 15 : Binary Cross Entropy Loss
+# Program  : Binary Cross Entropy Loss
 # Author    : Ishwari Vijaykumar Surve
 # Target:
 # Calculate the Binary Cross Entropy loss for 0/1 classification
