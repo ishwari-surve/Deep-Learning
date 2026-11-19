@@ -1,8 +1,18 @@
-# ------------------------------------------------------------
-# Detect edges using OpenCV
-# ------------------------------------------------------------
+# ============================================================
+# Program  : Edge Detection using OpenCV (Canny)
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Detect the edges of a real image using OpenCV Canny
+# Needs     : sample.png in the same folder
+# ============================================================
 
 import cv2
+
+print("=" * 60)
+print("   Deep Learning : CNN Edge Detection")
+print("   Program 28 : Edge Detection using OpenCV (Canny)")
+print("=" * 60)
+print("Press any key in an image window to close all windows.")
 
 # Load image
 img = cv2.imread("sample.png")
