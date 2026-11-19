@@ -1,17 +1,24 @@
-# ------------------------------------------------------------
-# Marvellous Edge Detection Demo with Animation
+# ============================================================
+# Program  : Edge Detection Demo with Animation
+# Author    : Ishwari Vijaykumar Surve
+# Target:
 # 6x6 Grayscale Image + 3x3 Kernel
 # Step-by-step Convolution Visualization
-# ------------------------------------------------------------
+# ============================================================
 
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 
+print("=" * 60)
+print("   Deep Learning : CNN Edge Detection")
+print("   Program 27 : Edge Detection Demo with Animation")
+print("=" * 60)
+
 # ------------------------------------------------------------
 # Function to print matrix in clean format
 # ------------------------------------------------------------
-def Marvellous_Print_Matrix(title, matrix):
+def Print_Matrix(title, matrix):
     print("\n" + "-" * 50)
     print(title)
     print("-" * 50)
@@ -20,7 +27,7 @@ def Marvellous_Print_Matrix(title, matrix):
 # ------------------------------------------------------------
 # Function to draw values inside matrix cells
 # ------------------------------------------------------------
-def Marvellous_Draw_Values(ax, matrix, text_color="black"):
+def Draw_Values(ax, matrix, text_color="black"):
     rows, cols = matrix.shape
     for i in range(rows):
         for j in range(cols):
@@ -42,7 +49,7 @@ image = np.array([
     [255, 255, 255, 255, 255, 255]
 ], dtype=int)
 
-Marvellous_Print_Matrix("Original 6x6 Image", image)
+Print_Matrix("Original 6x6 Image", image)
 
 # ------------------------------------------------------------
 # Step 2 : Create 3x3 Kernel
@@ -54,7 +61,7 @@ kernel = np.array([
     [ 1,  1,  1]
 ], dtype=int)
 
-Marvellous_Print_Matrix("3x3 Kernel", kernel)
+Print_Matrix("3x3 Kernel", kernel)
 
 # ------------------------------------------------------------
 # Step 3 : Prepare Feature Map
@@ -102,7 +109,7 @@ for i in range(4):
         # -------------------------
         axes[0].imshow(image, cmap="gray", vmin=0, vmax=255)
         axes[0].set_title("Original Image")
-        Marvellous_Draw_Values(axes[0], image)
+        Draw_Values(axes[0], image)
 
         # Red box showing current 3x3 region
         rect = Rectangle((j - 0.5, i - 0.5), 3, 3,
@@ -115,8 +122,8 @@ for i in range(4):
         # 2. Current Region
         # -------------------------
         axes[1].imshow(region, cmap="gray", vmin=0, vmax=255)
-        axes[1].set_title("Marvellous Current 3x3 Region")
-        Marvellous_Draw_Values(axes[1], region)
+        axes[1].set_title("Current 3x3 Region")
+        Draw_Values(axes[1], region)
         axes[1].set_xticks(range(3))
         axes[1].set_yticks(range(3))
 
@@ -125,7 +132,7 @@ for i in range(4):
         # -------------------------
         axes[2].imshow(kernel, cmap="gray")
         axes[2].set_title("3x3 Kernel")
-        Marvellous_Draw_Values(axes[2], kernel)
+        Draw_Values(axes[2], kernel)
         axes[2].set_xticks(range(3))
         axes[2].set_yticks(range(3))
 
@@ -134,7 +141,7 @@ for i in range(4):
         # -------------------------
         axes[3].imshow(feature_map, cmap="gray")
         axes[3].set_title("Feature Map So Far")
-        Marvellous_Draw_Values(axes[3], feature_map)
+        Draw_Values(axes[3], feature_map)
         axes[3].set_xticks(range(4))
         axes[3].set_yticks(range(4))
 
