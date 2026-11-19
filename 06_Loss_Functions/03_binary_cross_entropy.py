@@ -1,5 +1,18 @@
-# Binary Cross Entropy Demonstration
+# ============================================================
+# Program 15 : Binary Cross Entropy Loss
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Calculate the Binary Cross Entropy loss for 0/1 classification
+# Formula   : -(y * log(p) + (1 - y) * log(1 - p))
+# ============================================================
+
 import math
+
+print("=" * 60)
+print("   Deep Learning : Loss Functions")
+print("   Program 15 : Binary Cross Entropy Demonstration")
+print("=" * 60)
+
 
 def Binary_CrossEntropy(y_true, y_pred):
     total_loss = 0
