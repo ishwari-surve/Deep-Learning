@@ -1,8 +1,22 @@
+# ============================================================
+# Program 29 : Real-time Image Classification
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Classify the object in front of the webcam in real time
+# using a pre-trained MobileNetV2 CNN (trained on ImageNet)
+# Press q to quit
+# ============================================================
+
 import cv2
 import numpy as np
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_input, decode_predictions
 
-def MarvellousImageClassifier():
+def Realtime_Image_Classifier():
+    print("=" * 60)
+    print("   Deep Learning : Real-time Image Classification")
+    print("   Program 29 : Real-time Classification using MobileNetV2")
+    print("=" * 60)
+
     # 1) Load pre-trained CNN (ImageNet)
     model = MobileNetV2(weights="imagenet")
 
@@ -33,7 +47,7 @@ def MarvellousImageClassifier():
         # 5) Overlay prediction on the frame
         cv2.putText(frame, label, (16, 40), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 255, 0), 2, cv2.LINE_AA)
 
-        cv2.imshow("Marvellous Real-time CNN Classification", frame)
+        cv2.imshow("Real-time CNN Classification", frame)
 
         # 6) Exit
         if cv2.waitKey(1) & 0xFF == ord('q'):
@@ -44,7 +58,7 @@ def MarvellousImageClassifier():
     cv2.destroyAllWindows()
 
 def main():
-    MarvellousImageClassifier()
+    Realtime_Image_Classifier()
 
 if __name__ == "__main__":
     main()
