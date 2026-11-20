@@ -1,6 +1,16 @@
+# ============================================================
+# Program 30 : TensorFlow Tensor Types
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Create scalar, 1D, 2D and 3D tensors and print their shapes
+# ============================================================
+
 import tensorflow as tf
 
-print("----- TensorFlow Tensor Creation Example -----")
+print("=" * 60)
+print("   Deep Learning : TensorFlow Basics")
+print("   Program 30 : TensorFlow Tensor Creation Example")
+print("=" * 60)
 
 # Scalar tensor (single value)
 scalar_tensor = tf.constant(10)
