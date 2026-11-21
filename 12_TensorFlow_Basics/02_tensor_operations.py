@@ -1,5 +1,5 @@
 # ============================================================
-# Program 31 : TensorFlow Tensor Operations
+# Program  : TensorFlow Tensor Operations
 # Author    : Ishwari Vijaykumar Surve
 # Target:
 # Do basic operations on tensors: add, subtract, multiply,
