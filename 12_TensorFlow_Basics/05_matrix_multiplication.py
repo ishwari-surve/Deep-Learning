@@ -1,6 +1,17 @@
+
+# ============================================================
+# Program  : TensorFlow Matrix Multiplication
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Perform matrix multiplication using tf.matmul()
+# ============================================================
+
 import tensorflow as tf
 
-print("----- Matrix Multiplication Example -----")
+print("=" * 60)
+print("   Deep Learning : TensorFlow Basics")
+print("   Program 34 : Matrix Multiplication Example")
+print("=" * 60)
 
 # Create two matrices
 matrix1 = tf.constant([
