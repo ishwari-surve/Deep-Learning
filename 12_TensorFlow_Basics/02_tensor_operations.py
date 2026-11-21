@@ -1,6 +1,17 @@
+# ============================================================
+# Program 31 : TensorFlow Tensor Operations
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Do basic operations on tensors: add, subtract, multiply,
+# divide, square, reduce_sum and reduce_mean
+# ============================================================
+
 import tensorflow as tf
 
-print("----- Tensor Operations Example -----")
+print("=" * 60)
+print("   Deep Learning : TensorFlow Basics")
+print("   Program 31 : Tensor Operations Example")
+print("=" * 60)
 
 tensor1 = tf.constant([10, 20, 30])
 tensor2 = tf.constant([1, 2, 3])
