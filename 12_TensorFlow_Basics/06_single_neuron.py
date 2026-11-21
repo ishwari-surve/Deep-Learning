@@ -1,6 +1,17 @@
+# ============================================================
+# Program 35 : Single Neuron Using TensorFlow
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Implement a single neuron using inputs, weights, bias,
+# weighted sum and sigmoid activation function
+# ============================================================
+
 import tensorflow as tf
 
-print("----- Single Neuron Example -----")
+print("=" * 60)
+print("   Deep Learning : TensorFlow Basics")
+print("   Program 35 : Single Neuron Example")
+print("=" * 60)
 
 # Input values
 inputs = tf.constant([1.0, 2.0, 3.0])
