@@ -1,6 +1,18 @@
+
+# ============================================================
+# Program  : TensorFlow Variables
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Create and update TensorFlow variables using assign(),
+# assign_add() and assign_sub() operations
+# ============================================================
+
 import tensorflow as tf
 
-print("----- TensorFlow Variable Example -----")
+print("=" * 60)
+print("   Deep Learning : TensorFlow Basics")
+print("   Program 33 : TensorFlow Variable Example")
+print("=" * 60)
 
 # Create a variable
 weight = tf.Variable(5.0)
