@@ -3,7 +3,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 import numpy as np
 
-print("----- Neural Network -----")
+print("----- Neural Network -----") 
 
 # Sample input and output
 X = np.array([[1], [2], [3], [4], [5]], dtype=float)
