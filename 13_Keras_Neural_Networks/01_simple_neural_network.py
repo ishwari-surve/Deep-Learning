@@ -1,9 +1,20 @@
+# ============================================================
+# Program 36 : Simple Neural Network using Keras
+# Author    : Ishwari Vijaykumar Surve
+# Target:
+# Build a small Keras network that learns the pattern
+# output = 2 x input, then predict the output for input 6
+# ============================================================
+
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 import numpy as np
 
-print("----- Neural Network -----") 
+print("=" * 60)
+print("   Deep Learning : Keras Neural Networks")
+print("   Program 36 : Simple Neural Network")
+print("=" * 60)
 
 # Sample input and output
 X = np.array([[1], [2], [3], [4], [5]], dtype=float)
