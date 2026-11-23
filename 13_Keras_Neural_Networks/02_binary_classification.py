@@ -1,3 +1,16 @@
+# ============================================================
+# Program Name : Binary Classification using Neural Network
+# Program No.  : 036
+# Description  : This program implements a Binary Classification
+#                Neural Network using TensorFlow and Keras.
+#                It predicts whether a student will Pass or Fail
+#                based on Study Hours and Attendance.
+#
+# Author       : Ishwari Vijaykumar Surve
+# Language     : Python
+# Framework    : TensorFlow / Keras
+# ============================================================
+
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
