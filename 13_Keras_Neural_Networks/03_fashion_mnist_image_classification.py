@@ -1,3 +1,34 @@
+# ============================================================
+# Program Name : Fashion MNIST Image Classification using
+#                Deep Learning (Artificial Neural Network)
+#
+# Program No.  : 03
+#
+# Description  : This program implements an image classification
+#                application using the Fashion MNIST dataset
+#                and TensorFlow/Keras.
+#
+#                It loads and preprocesses the Fashion MNIST
+#                dataset containing 28x28 grayscale images of
+#                10 different clothing categories.
+#
+#                A Sequential Neural Network is built using
+#                Flatten and Dense layers with ReLU and Softmax
+#                activation functions.
+#
+#                The model is trained using the Adam optimizer
+#                and Sparse Categorical Crossentropy loss.
+#
+#                Finally, the trained model predicts clothing
+#                categories from test images and compares the
+#                predicted labels with the actual labels.
+#
+# Author       : Ishwari Vijaykumar Surve
+# Language     : Python
+# Framework    : TensorFlow / Keras
+# Dataset      : Fashion MNIST
+# ============================================================
+
 import tensorflow as tf
 from tensorflow import keras
 
