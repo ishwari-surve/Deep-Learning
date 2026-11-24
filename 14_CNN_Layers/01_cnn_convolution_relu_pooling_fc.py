@@ -1,3 +1,36 @@
+# ============================================================
+# Program Name : CNN - Convolution, ReLU, Pooling and
+#                Fully Connected Layer
+#
+# Program No.  : 01
+#
+# Description  : This program demonstrates the working of a
+#                Convolutional Neural Network (CNN) using
+#                NumPy and Matplotlib.
+#
+#                It takes a sample input image in matrix form
+#                containing either a vertical or horizontal
+#                line pattern.
+#
+#                The program performs the following operations:
+#                1. Convolution Layer - Detects vertical features
+#                   using a predefined kernel.
+#                2. ReLU Activation - Removes negative values.
+#                3. Max Pooling - Selects maximum values from
+#                   2x2 matrix blocks.
+#                4. Flatten Layer - Converts the matrix into
+#                   a one-dimensional array.
+#                5. Fully Connected Layer - Calculates the
+#                   final score using weights and bias.
+#                6. Final Prediction - Predicts the input
+#                   pattern based on the calculated score.
+#
+# Author       : Ishwari Vijaykumar Surve
+# Language     : Python
+# Libraries    : NumPy, Matplotlib
+# Concepts     : CNN, Convolution, ReLU, Max Pooling,
+#                Flattening, Fully Connected Layer
+# ============================================================
 import numpy as np
 import matplotlib.pyplot as plt
 
