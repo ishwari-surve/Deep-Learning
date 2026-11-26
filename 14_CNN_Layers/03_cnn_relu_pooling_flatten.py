@@ -1,7 +1,7 @@
 # ============================================================
 # Program Name : CNN Internal Steps Demonstration
 #
-# Program No.  : 040
+# Program No.  : 03
 #
 # Description  : This program demonstrates the internal
 #                operations of a Convolutional Neural Network
