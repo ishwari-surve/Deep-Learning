@@ -1,3 +1,40 @@
+# ============================================================
+# Program Name : Animated Convolutional Neural Network (CNN)
+#
+# Program No.  : 02
+#
+# Description  : This program demonstrates the working of a
+#                Convolutional Neural Network (CNN) through
+#                step-by-step visualization and animation.
+#
+#                It takes a sample input image containing
+#                either a vertical or horizontal line pattern.
+#
+#                The program performs the following operations:
+#
+#                1. Convolution Layer - Applies a kernel to
+#                   detect vertical features in the input image.
+#                2. ReLU Activation - Removes negative values.
+#                3. Max Pooling - Extracts maximum values from
+#                   2x2 matrix blocks.
+#                4. Flatten Layer - Converts the feature map
+#                   into a one-dimensional array.
+#                5. Fully Connected Layer - Calculates the
+#                   final score using weights and bias.
+#                6. Final Prediction - Displays the predicted
+#                   image pattern.
+#
+#                Uses Matplotlib to animate convolution and
+#                pooling operations and visualize the complete
+#                CNN processing pipeline.
+#
+# Author       : Ishwari Vijaykumar Surve
+# Language     : Python
+# Libraries    : NumPy, Matplotlib, Time
+# Concepts     : CNN, Convolution, ReLU, Max Pooling,
+#                Flattening, Fully Connected Layer,
+#                Feature Map Visualization, Animation
+# ============================================================
 import numpy as np
 import matplotlib.pyplot as plt
 import time
