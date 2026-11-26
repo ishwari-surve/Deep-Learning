@@ -1,10 +1,33 @@
-# ------------------------------------------------------------
-# CNN Internal Steps Demonstration
-# ReLU
-# Pooling
-# Flatten
-# Fully Connected Layer
-# ------------------------------------------------------------
+# ============================================================
+# Program Name : CNN Internal Steps Demonstration
+#
+# Program No.  : 040
+#
+# Description  : This program demonstrates the internal
+#                operations of a Convolutional Neural Network
+#                (CNN) using NumPy.
+#
+#                It takes a feature map generated after the
+#                convolution layer and performs the following:
+#
+#                1. ReLU Activation - Converts negative values
+#                   into zero using max(0, x).
+#                2. Max Pooling - Extracts maximum values from
+#                   four non-overlapping 2x2 blocks.
+#                3. Flatten Layer - Converts the pooled feature
+#                   map into a one-dimensional array.
+#                4. Fully Connected Layer - Performs
+#                   multiplication with weights and adds bias.
+#                5. Final Decision - Determines whether a
+#                   strong or weak feature is detected based
+#                   on the calculated output.
+#
+# Author       : Ishwari Vijaykumar Surve
+# Language     : Python
+# Library      : NumPy
+# Concepts     : CNN, ReLU, Max Pooling, Flatten,
+#                Fully Connected Layer, Weights and Bias
+# ============================================================
 
 import numpy as np
 
