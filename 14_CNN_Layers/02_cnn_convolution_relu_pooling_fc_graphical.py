@@ -1,7 +1,7 @@
 # ============================================================
 # Program Name : Animated Convolutional Neural Network (CNN)
 #
-# Program No.  : 02
+# Program No.  : 02 
 #
 # Description  : This program demonstrates the working of a
 #                Convolutional Neural Network (CNN) through
