@@ -1,3 +1,41 @@
+# ============================================================
+# Program Name : CNN Image Processing and Neural Network
+#                Visualization
+#
+# Program No.  : 04
+#
+# Description  : This program demonstrates the complete
+#                Convolutional Neural Network (CNN) pipeline
+#                using NumPy and Matplotlib.
+#
+#                It accepts a 6x6 input image containing
+#                either a vertical or horizontal line pattern.
+#
+#                The program performs the following operations:
+#
+#                1. Convolution Layer - Applies a kernel to
+#                   extract vertical features from the image.
+#                2. ReLU Activation - Converts negative values
+#                   into zero.
+#                3. Max Pooling - Extracts maximum values using
+#                   a 2x2 pooling window and stride 1.
+#                4. Flatten Layer - Converts the pooled feature
+#                   map into a one-dimensional vector.
+#                5. Fully Connected Layer - Performs weighted
+#                   calculations and adds bias.
+#                6. Neural Network Visualization - Graphically
+#                   displays input nodes, weights, FC layer,
+#                   bias and output prediction.
+#                7. Final Prediction - Displays the predicted
+#                   pattern and actual input.
+#
+# Author       : Ishwari Vijaykumar Surve
+# Language     : Python
+# Libraries    : NumPy, Matplotlib
+# Concepts     : CNN, Convolution, ReLU, Max Pooling,
+#                Flattening, Fully Connected Layer,
+#                Weights, Bias, Neural Network Visualization
+# ============================================================
 import numpy as np
 import matplotlib.pyplot as plt
 
