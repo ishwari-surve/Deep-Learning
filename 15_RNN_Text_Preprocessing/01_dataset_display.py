@@ -1,8 +1,25 @@
 # ============================================================
-# Program 1 : Dataset and Labels
-# Author    : Ishwari Vijaykumar Surve
-# Target:
-# Understand training data and output labels used for RNN
+# Program Name : Dataset and Labels for RNN
+# Program No.  : 001
+#
+# Description  : This program creates a simple text dataset
+#                containing sentences and their corresponding
+#                sentiment labels.
+#
+#                It demonstrates how input sentences are
+#                associated with numerical output labels:
+#                1 - Positive Sentiment
+#                0 - Negative Sentiment
+#
+#                The program uses the zip() function to
+#                iterate through sentences and labels
+#                simultaneously and displays their meanings.
+#
+# Author       : Ishwari Vijaykumar Surve
+# Language     : Python
+# Topic        : Deep Learning - Recurrent Neural Network (RNN)
+# Concepts     : Dataset Creation, Sentiment Labels,
+#                Text Data and zip() Function
 # ============================================================
 
 sentences = [
