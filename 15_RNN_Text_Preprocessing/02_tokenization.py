@@ -1,8 +1,24 @@
 # ============================================================
-# Program 2 : Split Sentence into Words
-# Author    : Ishwari Vijaykumar Surve
-# Target:
-# Understand that RNN reads text word by word in sequence
+# Program Name : Split Sentence into Words
+# Program No.  : 002
+#
+# Description  : This program demonstrates how a sentence
+#                is divided into individual words using
+#                Python's split() method.
+#
+#                It extracts each word from the input
+#                sentence and displays its position using
+#                the enumerate() function.
+#
+#                This demonstrates how text data is
+#                processed word by word in sequence before
+#                being used as input for an RNN model.
+#
+# Author       : Ishwari Vijaykumar Surve
+# Language     : Python
+# Topic        : Deep Learning - Recurrent Neural Network (RNN)
+# Concepts     : String split(), enumerate(), Word Tokenization,
+#                Sequential Text Processing
 # ============================================================
 
 sentence = "food was not good"
