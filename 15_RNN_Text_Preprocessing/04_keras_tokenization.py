@@ -1,8 +1,28 @@
 # ============================================================
-# Program 4 : Keras Tokenization
-# Author    : Ishwari Vijaykumar Surve
-# Target:
-# Use Keras Tokenizer to automatically create word index
+# Program Name : Keras Tokenization
+# Program No.  : 004
+#
+# Description  : This program demonstrates text tokenization
+#                using the Keras Tokenizer.
+#
+#                It takes a collection of sentences and uses
+#                the fit_on_texts() method to identify unique
+#                words from the dataset.
+#
+#                The word_index property automatically
+#                assigns a unique numerical index to each
+#                word in the vocabulary.
+#
+#                This process converts textual data into
+#                numerical representations required for
+#                training deep learning models such as RNNs.
+#
+# Author       : Ishwari Vijaykumar Surve
+# Language     : Python
+# Framework    : TensorFlow / Keras
+# Topic        : Deep Learning - Recurrent Neural Network (RNN)
+# Concepts     : Tokenization, Keras Tokenizer,
+#                fit_on_texts(), word_index, Vocabulary
 # ============================================================
 
 from tensorflow.keras.preprocessing.text import Tokenizer
