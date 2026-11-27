@@ -1,8 +1,26 @@
 # ============================================================
-# Program 3 : Manual Vocabulary Creation
-# Author    : Ishwari Vijaykumar Surve
-# Target:
-# Understand vocabulary and word index creation manually
+# Program Name : Manual Vocabulary Creation
+# Program No.  : 003
+#
+# Description  : This program demonstrates how to create a
+#                vocabulary manually from a given text dataset.
+#
+#                It extracts individual words from sentences
+#                using the split() method and stores only
+#                unique words in a vocabulary list.
+#
+#                It also assigns a unique numerical index
+#                to each vocabulary word using enumerate().
+#
+#                This process helps understand how text data
+#                is represented numerically before being
+#                processed by an RNN model.
+#
+# Author       : Ishwari Vijaykumar Surve
+# Language     : Python
+# Topic        : Deep Learning - Recurrent Neural Network (RNN)
+# Concepts     : Vocabulary Creation, Word Tokenization,
+#                Unique Words, Word Indexing, enumerate()
 # ============================================================
 
 sentences = [
