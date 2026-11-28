@@ -1,6 +1,6 @@
 # ============================================================
 # Program Name : Need of Padding in RNN
-# Program No.  : 006
+# Program No.  : 06
 #
 # Description  : This program demonstrates the need for
 #                padding in Recurrent Neural Networks (RNN).
