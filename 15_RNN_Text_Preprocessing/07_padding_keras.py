@@ -1,8 +1,31 @@
 # ============================================================
-# Program  : Padding using Keras
-# Author    : Ishwari Vijaykumar Surve
-# Target:
-# Use pad_sequences to make all sentence sequences equal length
+# Program Name : Padding using Keras
+# Program No.  : 07
+#
+# Description  : This program demonstrates how to apply
+#                padding to numerical text sequences using
+#                the Keras pad_sequences() function.
+#
+#                It first converts sentences into numerical
+#                sequences using the Keras Tokenizer.
+#
+#                The pad_sequences() function is then used
+#                to make all sequences equal in length.
+#
+#                Pre-padding is applied by adding zeros
+#                at the beginning of shorter sequences.
+#
+#                This ensures that all input sequences have
+#                a fixed length before being passed to an
+#                RNN model.
+#
+# Author       : Ishwari Vijaykumar Surve
+# Language     : Python
+# Framework    : TensorFlow / Keras
+# Topic        : Deep Learning - RNN Text Preprocessing
+# Concepts     : Tokenization, Numerical Sequences,
+#                pad_sequences(), Pre-padding,
+#                Fixed-Length Input Sequences
 # ============================================================
 
 from tensorflow.keras.preprocessing.text import Tokenizer
